@@ -6,10 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemSlider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Hello world</h2>
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <img src="img/0.png" alt="family&me">
+                        <p>А я Вам</p>
+                    </div>
+                    <div class="slide slide_2">
+                        <img src="img/1.png" alt="friends&me">
+                        <p>Сейчас</p>
+                    </div>
+                    <div class="slide slide_3">
+                        <img src="img/2.png" alt="doctor&me">
+                        <p>Покажу</p>
+                    </div>
+                    <div class="slide slide_4">
+                        <img src="img/4.png" alt="me&me">
+                        <p>Откуда</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div class="container">
+        <div class="wrapper">
+            <div class="slides">
+                <div class="slide slide_1"> <img
+                        src="img/o-rawh0dLLZJecD0MHB9O76KpGxbz5VoCAbqd-tDVSxpx8gaA2jovZKUyJAS84ni5amkCXTS.jpg"
+                        alt="family&me"></div>
+                <div class="slide slide_2"> <img
+                        src="img/1TYbfDiP7fY59j8X1ZkvaktWV-CK-3oBTRr29zl2CT-_ipFYV10exH0cEqI0lEkYAhbyOdw2.jpg"
+                        alt="friends&me"></div>
+                <div class="slide slide_3"><img
+                        src="img/g1ZuS8HvlEoi3ChnNvNf1uzAaw4rVPs5orB6ZZscmf-DQAdYqRhd-eLqucq0-ZH_yJ9-PETR.jpg"
+                        alt="doctor&me"></div>
+                <div class="slide slide_4"> <img
+                        src="img/h1t_FmM2RYmLVKvFAssJU95-kSv9-6HmCczq5-dnns7QcsvPnq0fj2IWiqEFdPjkqGxK_TIt.jpg"
+                        alt="me&me"></div>
+            </div>
+            <div class="content">
+                <div class="promo">
+                    <p class="promo promo_1">А я Вам</p>
+                    <p class="promo promo_2">Сейчас</p>
+                    <p class="promo promo_3">Покажу</p>
+                    <p class="promo promo_4">Откуда</p>
+                </div>
+                <div class="buttons">
+                    <button class="button button__checked"></button>
+                    <button class="button "></button>
+                    <button class="button "></button>
+                    <button class="button "></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <img src="img/o-rawh0dLLZJecD0MHB9O76KpGxbz5VoCAbqd-tDVSxpx8gaA2jovZKUyJAS84ni5amkCXTS.jpg"
+                            alt="family&me">
+                        <p>А я Вам</p>
+                    </div>
+                    <div class="slide slide_2">
+                        <img src="img/1TYbfDiP7fY59j8X1ZkvaktWV-CK-3oBTRr29zl2CT-_ipFYV10exH0cEqI0lEkYAhbyOdw2.jpg"
+                            alt="friends&me">
+                        <p>Сейчас</p>
+                    </div>
+                    <div class="slide slide_3">
+                        <img src="img/g1ZuS8HvlEoi3ChnNvNf1uzAaw4rVPs5orB6ZZscmf-DQAdYqRhd-eLqucq0-ZH_yJ9-PETR.jpg"
+                            alt="doctor&me">
+                        <p>покажу</p>
+                    </div>
+                    <div class="slide slide_4">
+                        <img src="img/h1t_FmM2RYmLVKvFAssJU95-kSv9-6HmCczq5-dnns7QcsvPnq0fj2IWiqEFdPjkqGxK_TIt.jpg"
+                            alt="me&me">
+                        <p>откуда</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div> -->
+
 </body>
 
 </html>
+
+
+<!-- <div class="slide s1">
+    <img src="img/o-rawh0dLLZJecD0MHB9O76KpGxbz5VoCAbqd-tDVSxpx8gaA2jovZKUyJAS84ni5amkCXTS.jpg"
+        alt="family&me">
+</div>
+<div class="slide">
+    <img src="img/1TYbfDiP7fY59j8X1ZkvaktWV-CK-3oBTRr29zl2CT-_ipFYV10exH0cEqI0lEkYAhbyOdw2.jpg"
+        alt="friends&me">
+</div>
+<div class="slide">
+    <img src="img/g1ZuS8HvlEoi3ChnNvNf1uzAaw4rVPs5orB6ZZscmf-DQAdYqRhd-eLqucq0-ZH_yJ9-PETR.jpg"
+        alt="doctor&me">
+</div>
+<div class="slide">
+    <img src="img/h1t_FmM2RYmLVKvFAssJU95-kSv9-6HmCczq5-dnns7QcsvPnq0fj2IWiqEFdPjkqGxK_TIt.jpg" alt="me&me">
+</div> -->
