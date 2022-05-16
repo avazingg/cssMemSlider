@@ -1,3 +1,4 @@
+
 .slide{
    display: flex;
    flex-direction: column;
@@ -11,8 +12,10 @@
    max-width: 100%;
    /* text-align: center; */
    z-index: 2;
- 
+  
 }
+
+
 #slider input[type=radio] {
    display: none;
    
@@ -23,19 +26,18 @@
    
 }
 #slides {
-   /* height: 514px;
-   width: 1000px; */
+   
    padding: 0px;
  
    background: #fff;
-   position: relative;
+   /* position: relative; */
    z-index: 1;
 }
 #overflow {
    z-index: 2;
    width: 100%;
-   overflow-x: hidden;
-   overflow-y: visible;
+   overflow: hidden;
+   /* overflow-y: visible; */
 }
 
 #slide1:checked ~ #slides .inner {
@@ -55,7 +57,7 @@
    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
    width: 400%;
    line-height: 0;
-   height: 570px;
+   max-height: 570px;
    z-index: 2;
 }
 #slides .slide {
@@ -75,7 +77,7 @@
    width: 100%;
    height: 50px;
    z-index: 3;
-   position: relative;
+   /* position: relative; */
 }
 #controls label {
    transition: opacity 0.2s ease-out;
@@ -106,21 +108,26 @@
    display: block;
 }
 #bullets {
-   margin-top: 107px;
-   margin-left: 868px;
+   /* margin-top: 107px;
+   margin-left: 824px;
+  padding-top: 10px ;
    text-align: center;
    overflow: visible;
    z-index: 5;
-   position: relative;
+   position: static;  */
+   padding-top: 35px;
+   display: flex;
+   justify-content: end;
 }
 #bullets label {
    z-index: 5;
    display: inline-block;
-   width: 10px;
-   height: 10px;
+   width: 15px;
+   height: 15px;
    border-radius:100%;
    background: #ccc;
-   margin: 0 10px;
+   margin: 0 8px;
+   border: 5px solid #fff;
 }
 #slide1:checked ~ #bullets label:nth-child(1),
 #slide2:checked ~ #bullets label:nth-child(2),
@@ -147,12 +154,46 @@
 p{
    display: flex;
    justify-content: start;
-   padding-top: 40px;
+   padding-top: 85px;
    font-size: 20px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   height: 80px;
    margin: 0px 0 0 0;
    color: #444;
    overflow:visible;
 }
 body{
-  margin-top: 200px;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+  margin-top: 150px;
+  background-color: rgb(250, 255, 255);
+}
+
+
+
+@media screen and (max-width: 1018px) {
+   
+   #bullets {
+      /* margin-top: -180px;
+      margin-left: 0px; */
+      /* z-index: 5;
+      position: static; */
+      /* position: sticky;  */
+      justify-content: center;
+      padding-top: 0px;
+   }
+   p{
+      padding-top: 100px;
+      word-wrap: normal;
+   }
+}
+
+
+@media screen and (max-width: 470px) {
+   
+   #bullets label {
+      margin: 0 4px;
+      border: 5px solid #fff;
+   }
 }
