@@ -119,7 +119,7 @@
    display: flex;
    justify-content: end;
 }
-#bullets label {
+#bullets label{
    z-index: 5;
    display: inline-block;
    width: 15px;
@@ -127,7 +127,11 @@
    border-radius:100%;
    background: #ccc;
    margin: 0 8px;
-   border: 5px solid #fff;
+   border: 5px solid #fff; 
+  
+}
+#bullets label:hover {
+   background-color: rgb(154, 143, 143);
 }
 #slide1:checked ~ #bullets label:nth-child(1),
 #slide2:checked ~ #bullets label:nth-child(2),
